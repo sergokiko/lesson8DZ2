@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="appendList()">
+<button onclick="localStorage.clear()">clear</button>
+<textarea id="textarea1"></textarea>
+<div style="height: 300px"></div>
+
+
+<form name="Form" id="form">
+    <input type="text" id="inputText">
+    <input type="checkbox" id="checkbox">
+    <input type="radio" name ="name" id ="radioOne" >
+    <input type="radio" name ="name" id ="radioTwo" >
+    <textarea id ="textarea"></textarea>
+
+    <input id ='emali' type="email">
+</form>
+    <div style="height: 300px"></div>
+
+    <button id="prev" >prev</button>
+    <button id="next" >next</button>
+    <textarea id="textarea2" cols="45" rows="20" style="display: block"></textarea>
+    <button id="save">save</button>
+
+    <div style="height: 300px"></div>
+<form   name="pocketbook" id="pocketbook">
+    <input type="text" id="name" placeholder="name">
+    <input type="number" id="phone" placeholder="phone">
+    <input type="email" id="email" placeholder="email">
+    <input type="text" id="company" placeholder="company">
+    <input type="text" id="dpartment" placeholder="daprtment">
+    <label for="date">Date of birth</label>
+    <input type="date" id="date" >
+</form>
+<button id="saveData">save</button>
+<div id="list"></div>
+<script src="script.js"></script>
+</body>
+</html>
