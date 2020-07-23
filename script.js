@@ -130,10 +130,7 @@ function appendList() {
     }
     }
 
-function deleteFunction() {
-    this.parentElement.parentElement.removeChild(this.parentElement);
-    localStorage.removeItem(this.parentElement.id)
-}
+
 
 function appendObj(obj) {
     let  list =  document.getElementById('list');
@@ -147,7 +144,8 @@ function appendObj(obj) {
     editBtn.innerHTML = 'edit';
 
     editBtn.style.display = 'block';
-     editBtn.addEventListener('click', editFunction)
+     editBtn.addEventListener('click', editFunction);
+
     let delBtn = document.createElement('button');
     delBtn.innerHTML = 'Delete';
     delBtn.style.display = 'block'
@@ -155,6 +153,11 @@ function appendObj(obj) {
     divka.appendChild(editBtn)
     divka.appendChild(delBtn)
     list.appendChild(divka);
+}
+
+function deleteFunction() {
+    this.parentElement.parentElement.removeChild(this.parentElement);
+    localStorage.removeItem(this.parentElement.id)
 }
 
 function editFunction() {
